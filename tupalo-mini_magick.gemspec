@@ -1,8 +1,6 @@
-version = File.read("VERSION").strip
-
 Gem::Specification.new do |s|
   s.name        = 'tupalo-mini_magick'
-  s.version     = version
+  s.version     = '3.2'
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Ported peplin/mini_magick to new mini_magick version"
   s.description = ""
@@ -10,7 +8,7 @@ Gem::Specification.new do |s|
   s.email       = ["probablycorey@gmail.com", "hcatlin@gmail.com", "peter@nulayer.com", "thomas@tupalo.com"]
   s.homepage    = "http://github.com/fadr/tupalo-mini_magick"
 
-  s.files        = Dir['README.rdoc', 'VERSION', 'MIT-LICENSE', 'Rakefile', 'lib/**/*']
+  s.files        = Dir['README.rdoc', 'MIT-LICENSE', 'Rakefile', 'lib/**/*']
   s.test_files   = Dir['test/**/*']
   s.require_path = 'lib'
 
