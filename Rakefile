@@ -26,7 +26,7 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-spec = eval(File.read('mini_magick.gemspec'))
+spec = eval(File.read('tupalo-mini_magick.gemspec'))
 Rake::GemPackageTask.new(spec) do |pkg|
   pkg.gem_spec = spec
 end
