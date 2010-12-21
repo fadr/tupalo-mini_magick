@@ -392,12 +392,9 @@ module MiniMagick
       #
       # The 'montage' script has several options, see here: http://www.imagemagick.org/script/montage.php
       def self.new(images, output_extension, options={})
-        begin
-          tempfile = Tempfile.new(['mini_magick', output_extension.to_s])
-          tempfile.binmode
-        ensure
-          tempfile.close
-        end
+        tempfile = Tempfile.new(['mini_magick', output_extension.to_s])
+        tempfile.binmode
+        tempfile.close
 
         args = options.collect { |key,value| "-#{key.to_s} #{value.to_s}" }  # collect hash parts into arguments
         images.each do |image|
