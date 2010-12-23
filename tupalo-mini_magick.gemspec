@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'tupalo-mini_magick'
-  s.version     = '3.2'
+  s.version     = '3.2.2'
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Ported peplin/mini_magick to new mini_magick version"
   s.description = ""
